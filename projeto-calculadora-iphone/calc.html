@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculado Iphone</title>
     <link rel="stylesheet" href="estilo/style.css">
+    
+    
 </head>
 <body>
     <h1>Calculadora Iphone</h1>
@@ -13,18 +15,43 @@
         <section>
             <div class="calculadora">
                 <h2>Calculadora</h2>
-                <p class="resultado"></p>
+                <p id="resultado"></p>
 
                 <table> 
                     <tr>
-                        <td><button>AC</button></td>
+                        <td><button onclick="clean()">AC</button></td>
+                        <td><button onclick="back()"> &lt; </button></td>
                         <td><button>%</button></td>
-                        <td><button>%</button></td>
-                        <td><button>/</button></td>
+                        <td><button class="cor" onclick="insert('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="insert('7')">7</button></td>
+                        <td><button onclick="insert('8')">8</button></td>
+                        <td><button onclick="insert('9')">9</button></td>
+                        <td><button class="cor" onclick="insert('*')">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="insert('4')">4</button></td>
+                        <td><button onclick="insert('5')">5</button></td>
+                        <td><button onclick="insert('6')">6</button></td>
+                        <td><button class="cor" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="insert('1')">1</button></td>
+                        <td><button onclick="insert('2')">2</button></td>
+                        <td><button onclick="insert('3')">3</button></td>
+                        <td><button class="cor" onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" ><button onclick="insert('0')" class="botão
+                            ">0</button></td>
+                        <td><button onclick="insert('.')">.</button></td>
+                        <td><button class="cor" onclick="calcular()">=</button></td>
                     </tr>
                 </table>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
