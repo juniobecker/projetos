@@ -12,6 +12,10 @@ nav {
     background-color: rgb(203, 168, 243);
     padding: 10px;
 }
+
+nav > p {
+    padding: 5px;
+}
 nav > p:hover {
     background-color: white;
     border-radius: 8px;
@@ -58,6 +62,7 @@ div.container{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.288);
     
     
 }
@@ -68,6 +73,7 @@ div.container{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.288);
 }
 .caixa3 {
     background-color: rgb(168, 77, 105);
@@ -76,6 +82,7 @@ div.container{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.288);
 }
 .caixa4 {
 background-color: white;
@@ -83,6 +90,7 @@ height: 28px;
 display: flex;
 align-items: center;
 justify-content: center;
-border-radius: 5px; 
+border-radius: 5px;
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.288);
 }
 
